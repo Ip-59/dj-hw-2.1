@@ -1,0 +1,385 @@
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+  Your models in app(s): 'main' have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate^C
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+Migrations for 'main':
+  main/migrations/0001_initial.py
+    - Create model Car
+    - Create model Client
+    - Create model Sale
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'body_type' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'body_type' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> exit
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main, sessions
+Running migrations:
+  No migrations to apply.
+  Your models in app(s): 'main' have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'body_type' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'body_type' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'color' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'image' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2       
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'mileage' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'mileage' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'price' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'car' to sale without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> 0
+It is impossible to add a non-nullable field 'client' to sale without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add the field 'created_at' with 'auto_now_add=True' to sale without providing a default. This is because the database needs something to populate existing rows.
+ 1) Provide a one-off default now which will be set on all existing rows
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add the field 'created_at' with 'auto_now_add=True' to sale without providing a default. This is because the database needs something to populate existing rows.
+ 1) Provide a one-off default now which will be set on all existing rows
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+main.Sale.created_at: (fields.E160) The options auto_now, auto_now_add, and default are mutually exclusive. Only one of these options may be present.
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ ^C
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add the field 'created_at' with 'auto_now_add=True' to sale without providing a default. This is because the database needs something to populate existing rows.
+ 1) Provide a one-off default now which will be set on all existing rows
+ 2) Quit and manually define a default value in models.py.
+Select an option: 2
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'volume' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: ^CTraceback (most recent call last):
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 22, in <module>
+    main()
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 412, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 106, in wrapper
+    res = handle_func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/commands/makemigrations.py", line 233, in handle
+    changes = autodetector.changes(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/autodetector.py", line 46, in changes
+    changes = self._detect_changes(convert_apps, graph)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/autodetector.py", line 196, in _detect_changes
+    self.generate_added_fields()
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/autodetector.py", line 1026, in generate_added_fields
+    self._generate_added_field(app_label, model_name, field_name)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/autodetector.py", line 1059, in _generate_added_field
+    field.default = self.questioner.ask_not_null_addition(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/questioner.py", line 169, in ask_not_null_addition
+    choice = self._choice_input(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/questioner.py", line 114, in _choice_input
+    result = input()
+             ^^^^^^^
+KeyboardInterrupt
+
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+It is impossible to add a non-nullable field 'volume' to car without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> 0
+It is impossible to add a non-nullable field 'car' to sale without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> 0
+It is impossible to add a non-nullable field 'client' to sale without specifying a default. This is because the database needs something to populate existing rows.
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+>>> 0
+It is impossible to add the field 'created_at' with 'auto_now_add=True' to sale without providing a default. This is because the database needs something to populate existing rows.
+ 1) Provide a one-off default now which will be set on all existing rows
+ 2) Quit and manually define a default value in models.py.
+Select an option: 1
+Please enter the default value as valid Python.
+Accept the default 'timezone.now' by pressing 'Enter' or provide another value.
+The datetime and django.utils.timezone modules are available, so it is possible to provide e.g. timezone.now as a value.
+Type 'exit' to exit this prompt
+[default: timezone.now] >>> 0
+Migrations for 'main':
+  main/migrations/0002_car_body_type_car_color_car_drive_unit_car_fuel_type_and_more.py
+    - Add field body_type to car
+    - Add field color to car
+    - Add field drive_unit to car
+    - Add field fuel_type to car
+    - Add field gearbox to car
+    - Add field image to car
+    - Add field mileage to car
+    - Add field model to car
+    - Add field price to car
+    - Add field volume to car
+    - Add field year to car
+    - Add field car to sale
+    - Add field client to sale
+    - Add field created_at to sale
+    - Alter field id on car
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main, sessions
+Running migrations:
+  Applying main.0002_car_body_type_car_color_car_drive_unit_car_fuel_type_and_more...Traceback (most recent call last):
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 22, in <module>
+    main()
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 412, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 106, in wrapper
+    res = handle_func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/commands/migrate.py", line 356, in handle
+    post_migrate_state = executor.migrate(
+                         ^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 135, in migrate
+    state = self._migrate_all_forwards(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 167, in _migrate_all_forwards
+    state = self.apply_migration(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 252, in apply_migration
+    state = migration.apply(state, schema_editor)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/migration.py", line 132, in apply
+    operation.database_forwards(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/operations/fields.py", line 108, in database_forwards
+    schema_editor.add_field(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 668, in add_field
+    definition, params = self.column_sql(model, field, include_default=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 359, in column_sql
+    " ".join(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 310, in _iter_column_sql
+    default_value = self.effective_default(field)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 429, in effective_default
+    return field.get_db_prep_save(self._effective_default(field), self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/utils/dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate main 0001
+Operations to perform:
+  Target specific migration: 0001_initial, from main
+Running migrations:
+  No migrations to apply.
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py makemigrations
+Migrations for 'main':
+  main/migrations/0003_alter_car_color_alter_car_image_alter_car_model_and_more.py
+    - Alter field color on car
+    - Alter field image on car
+    - Alter field model on car
+    - Alter field volume on car
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, main, sessions
+Running migrations:
+  Applying main.0002_car_body_type_car_color_car_drive_unit_car_fuel_type_and_more...Traceback (most recent call last):
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 22, in <module>
+    main()
+  File "/home/ip-59/dj-hw-2.1/orm_shop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 412, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/base.py", line 106, in wrapper
+    res = handle_func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/core/management/commands/migrate.py", line 356, in handle
+    post_migrate_state = executor.migrate(
+                         ^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 135, in migrate
+    state = self._migrate_all_forwards(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 167, in _migrate_all_forwards
+    state = self.apply_migration(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/executor.py", line 252, in apply_migration
+    state = migration.apply(state, schema_editor)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/migration.py", line 132, in apply
+    operation.database_forwards(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/migrations/operations/fields.py", line 108, in database_forwards
+    schema_editor.add_field(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 668, in add_field
+    definition, params = self.column_sql(model, field, include_default=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 359, in column_sql
+    " ".join(
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 310, in _iter_column_sql
+    default_value = self.effective_default(field)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/backends/base/schema.py", line 429, in effective_default
+    return field.get_db_prep_save(self._effective_default(field), self.connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 954, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1607, in get_db_prep_value
+    value = self.get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1585, in get_prep_value
+    value = super().get_prep_value(value)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1464, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py", line 1546, in to_python
+    parsed = parse_datetime(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ip-59/dj-hw-2.1/venv/lib/python3.11/site-packages/django/utils/dateparse.py", line 114, in parse_datetime
+    return datetime.datetime.fromisoformat(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fromisoformat: argument must be str
+(venv) ip-59@mx-linux:~/dj-hw-2.1/orm_shop
+$ 
